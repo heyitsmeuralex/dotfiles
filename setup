@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+rm $HOME/.config/fish -rf
+rm $HOME/.vimrc -f
+rm $HOME/.vim -rf
+
+ln -s $HOME/dotfiles/fish $HOME/.config/fish
+ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
+ln -s $HOME/dotfiles/.vim $HOME/.vim
+
+source $HOME/.config/fish/config.fish
