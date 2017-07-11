@@ -38,6 +38,7 @@ set virtualedit=onemore
 set undofile
 set undolevels=1000
 set undoreload=10000
+set undodir="~/.vim/undo/"
 
 " highlight current line
 "set cursorline
@@ -58,4 +59,14 @@ set shiftwidth=2
 set expandtab
 set softtabstop=2
 set cindent
+
+" :W to write as sudo
+command W w !sudo tee
+
+" :Wq to write as sudo, then quit
+command Wq call Wq()
+function Wq()
+  :W
+  :q
+endfunction
 
