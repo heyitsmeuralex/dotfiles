@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'dag/vim-fish'
 Plugin 'dracula/vim'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
@@ -69,4 +70,8 @@ function Wq()
   :W
   :q
 endfunction
+
+" vim-javascript (better js syntax)
+let g:javascript_plugin_flow = 1
+set foldmethod=syntax
 

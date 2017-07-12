@@ -39,3 +39,12 @@ set -U fish_color_selection \x2d\x2dbackground\x3d$PURPLE
 set -U fish_color_user $PURPLE
 set -U fish_color_valid_path \x2d\x2dunderline
 
+# aliases
+abbr --add l "ls -al"
+abbr --add ff "firefox --new-tab"
+abbr --add v "vim"
+abbr --add c "clear"
+
+# go
+set -x GOPATH $HOME/.go
+
