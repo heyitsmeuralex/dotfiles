@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'dag/vim-fish'
 Plugin 'dracula/vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()
 
@@ -61,6 +62,9 @@ set expandtab
 set softtabstop=2
 set cindent
 
+" make tab chars appear as 2-spaces when used
+set tabstop=2
+
 " :W to write as sudo
 command W w !sudo tee
 
@@ -74,4 +78,7 @@ endfunction
 " vim-javascript (better js syntax)
 let g:javascript_plugin_flow = 1
 set foldmethod=syntax
+
+" use fish for :sh command
+set shell=fish
 

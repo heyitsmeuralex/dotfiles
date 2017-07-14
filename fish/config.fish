@@ -44,6 +44,8 @@ abbr --add l "ls -al"
 abbr --add ff "firefox --new-tab"
 abbr --add v "vim"
 abbr --add c "clear"
+abbr --add copy "xsel --clipboard --input"
+abbr --add paste "xsel --clipboard --output"
 
 # go
 set -x GOPATH $HOME/.go
